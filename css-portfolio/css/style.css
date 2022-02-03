@@ -1,0 +1,186 @@
+
+
+/* Global style...........*/
+
+/* PROFILE ...................*/
+
+html{
+  box-sizing: border-box;
+}
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+body{
+  color: #000000;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+header{
+  background-color: #222;
+  color: #FFFAFA;
+  }
+.technical{
+  margin-top: 0;
+}
+h1{
+  font-size: 90px;
+  font-weight: normal;
+  margin: 0;
+  line-height: 1.5;
+  color: #a9a9b3;
+}
+img{
+  width: 300px;
+ border-radius: 7px;
+}
+a{
+  color: #FFEB3B;
+}
+a:hover{
+  text-decoration:none;
+  opacity: 0.5;
+}
+.content-wrap{
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+
+
+  /*-- ********************  PROJECTS / PORTFOLIO  ********************* -->*/
+
+.Types{
+  background: #F0FFF0;
+  border-top: 2px solid #fff;
+}
+.Types a {
+  color: white;
+  background: rgb(88, 52, 235);
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 6px;
+  margin : 4px;
+}
+
+h2{
+  margin-top: 0;
+  margin-bottom: 3;
+  font-size: 40px;
+}
+h1,h2 {
+  font-family: 'Caveat Brush', cursive;
+}
+.project-item{
+  overflow: hidden;
+  border-bottom: 1px dashed #A9A9A9;
+  padding: 20px 0;
+}
+.project-item h3{
+  margin-top: 0;
+}
+.item-details h3 + p {
+  font-style: italic;
+}
+.divider > section:last-of-type {
+  border-bottom: none;
+}
+
+
+/* WORK EXPERIENCE.............*/
+.WORK-EXPERIENCE{
+  background: #A1C6D7;
+  border-top: 2px solid #fff;
+}
+
+
+
+/* EDUCATION..........*/
+
+
+.education-item{
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px dashed #000000;
+  padding: 20px 0;
+}
+
+}
+.education-item h3{
+  margin: 0;
+}
+
+.education{
+  margin-left: 0;
+  background-image: url(../images/joanna-kosinska-unsplash.jpg);
+  background-size: cover;
+  background-position: top right;
+  border-top: 2px solid #fff;
+}
+
+
+/* contact information............*/
+
+footer{
+  background: #232425;
+    color: #232425;
+    border-top: 2px solid #fff;
+
+}
+
+footer h2{
+  color: #a9a9b3;
+}
+.contain-items{
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+.contain-items a{
+  padding: 0px;
+  display: inline-block;
+  color: #a9a9b3;
+
+}
+
+
+   /* Responsive............*/
+
+   @media screen and (min-width: 750px) {
+
+     header, footer{
+       text-align: center;
+     }
+
+   .contain-items{
+     justify-content: center;
+   }
+
+     .project-item img {
+       float:left;
+       margin-right: 20px;
+     }
+
+     .job-item{
+         display: grid;
+         grid-template-columns: 1fr 2fr;
+         column-gap: 10px;
+         border-bottom: 1.5px dashed #000000;
+     }
+   }
+
+  @media screen and (max-width: 750px) {
+
+     h1{
+       font-size: 75px;
+       line-height: 1;
+     }
+      .contain-items a {
+          padding: 0px;
+      }
+  }
